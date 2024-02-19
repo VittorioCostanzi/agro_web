@@ -54,7 +54,7 @@ ROOT_URLCONF = 'agro_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:\Users\vitto\Desktop\Programacion\portfolio_django\agro_web\agro_web\agro_web\templates"],
+        'DIRS': [r"agro_web\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
