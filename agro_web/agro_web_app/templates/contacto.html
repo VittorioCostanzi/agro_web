@@ -1,0 +1,54 @@
+{% extends 'index.html'%}
+{% load static %}
+{% block inicio_bloque %}
+
+<div class="row py-3" style="margin-left: 10%; margin-right: 10%;">
+  <h1 style="padding-top: 2%; color:#31353b">Contacto</h1>
+
+  <div style="width: 50%; padding-top: 4%;">
+    <form action="" method="post">
+      <ul style="list-style: none;">
+        <li>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="user_name" style="display: block; margin-bottom: 10px; width: 500px;"/>
+        </li>
+        <li>
+          <label for="phone">Número de teléfono</label>
+          <input type="tel" id="telefono" name="phone"  style="display: block; margin-bottom: 10px; width: 500px;">
+        </li>
+        <li>
+          <label for="mail">Correo electrónico</label>
+          <input type="email" id="correo" name="user_mail" style="display: block; margin-bottom: 10px;width: 500px;"/>
+        </li>
+        <li>
+          <label for="msg">Su consulta</label>
+          <textarea id="msg" name="user_message" style="display: block; margin-bottom: 15px;width: 500px; height: 100px;"></textarea>
+        </li>
+        <li>
+          <button type="submit" style="border-radius: 5px; border-width: 1px;">Enviar consulta</button>
+        </li>
+      </ul>
+      
+    </form>
+    
+  </div>
+  <div class="v-line" style="width: 50%; border-left:thick solid; border-width: 1px; border-color:rgb(222,226,230);">
+    <h3 style="padding-left: 1%;">Ubicación</h3>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2761.5679712409496!2d-60.96813764728289!3d-34.60223258105572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1708695740716!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h4 style="padding-top: 20px;">Dirección</h4>
+
+    <p style="padding-left: 10px;">Colectora Ruta 7 intersección con calle Guido Spano<br>Junín, Buenos Aires</p>
+
+    <h4>Teléfono</h4>
+
+    <p style="padding-left: 10px;">(236) 43945213</p>
+
+    <h4>Correo</h4>
+
+    <p style="padding-left: 10px;">Agroservicios@gmail.com</p>
+
+  </div>
+</div>
+
+{% endblock %}
